@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        SurveyForm
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Survey Form</h1>
+        <caption>Thank you for taking the time to fill this form</caption>
+    </header>
+    <main>
+        <div class="container">
+            <form>
+                <label for="name">
+                    <p>Name:</p>
+                </label>
+                <input id="name" name="name" type="text" placeholder="Name" required>
+
+                <label for="email">
+                    <p>Email:</p>
+                </label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+
+                <label for="age">
+                    <p>Age(optional)</p>
+                    <input id="age" name="age" type="number" min="18" placeholder="Age" value="age">
+                </label>
+                <label for="city">
+                    <p>City:</p>
+                    <select id="city" aria-placeholder="Select your city" required>
+                        <option selected value="kota">Kota</option>
+                        <option value="udaipur">Udaipur</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="jodhpur">Jodhpur</option>
+                        <option value="baran">Baran</option>
+                    </select>
+                </label>
+                <div>
+                    <p>Did you like this page?</p>
+                    <label class="checkbox" for="opinion">
+                        <input type="radio" id="opinion" name="radio" value="Definitely" checked>Definitely
+                    </label>
+                    <label class="checkbox" for="opinion 2">
+                        <input type="radio" id="opinion 2" name="radio" value="itsOk">It's OK
+                    </label>
+                    <label class="checkbox" for="opinion 3">
+                        <input type="radio" id="opinion 3" name="radio" value="No">No
+                    </label>
+                </div>
+                <div>
+                    <p>Here comes the checkbox</p>
+                    <label class="checkbox" for="checkbox1">
+                        <input " type="checkbox" id="checkbox1" name="checkbox" value="Lorem">Lorem
+                    </label>
+                    <label class="checkbox" for="checkbox2">
+                        <input type="checkbox" id="checkbox2" name="checkbox" value="Blah">Blah-Blah
+                    </label>
+                    <label class="checkbox" for="checkbox3">
+                        <input type="checkbox" id="checkbox3" name="checkbox" value="SeeYa">See ya
+                    </label>
+                </div>
+                <div>
+                    <p>Any suggestions?</p>
+                    <label for="comments">
+                        <textarea type="text" id="comments" name="comments" placeholder="Comments"></textarea>
+                    </label>
+                </div>
+                <div class="btn">
+                <button id="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
