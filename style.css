@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    font-size:1.5rem;
+    background-image: url("https://goodlifezen.com/wp-content/uploads/2015/05/How-to-meditate-low-opacity.004-001.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height:100vh;
+}
+header{
+    text-align:center;
+    padding-bottom: 50px;
+}
+main{
+    display:flex;
+    justify-content: center;
+    padding-bottom:20vh;
+    height:;
+  position:relative;
+}
+
+
+.container::before{
+    background-color: blue;
+    opacity:0.2;
+    height:98%;
+    width:60%;
+    position:absolute;
+    border-radius: 15px;
+    left:20%;
+    content:"";
+    z-index: -1;
+}
+
+#name{
+    animation-name: name;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+#email{
+    animation-name: name;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+#age{
+    animation-name: name;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+select{
+    animation-name: name;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes name{
+    100%{
+        width:50vw
+    }
+}
+#name, #email, #age, select{
+    font-size: 1.5rem;
+    width:100px;
+    transition:width 0.4s ease-in-out;
+    padding:5px;
+    border-radius:5px;
+    position:relative;
+    bottom:5px;
+}
+#name:focus, #email:focus, #age:focus{
+   border:2px solid rgba(240, 169, 89, 0.836);
+   box-shadow:rgba(240, 169, 89, 0.836) 0px 0px 3px 2px;
+}
+.checkbox{
+
+    margin:10px;
+}
+p{
+    margin-bottom: 10px;
+}
+label{
+    display:block;
+}
+textarea{
+    width:50vw;
+    height:30px;
+    padding:12px;
+    font-size: 1.5rem;
+    transition: height 0.4s;
+    resize:none;
+    border-radius: 6px;
+}
+textarea:focus{
+    height:200px;
+}
+Button{
+    width:40vw;
+    font-size: 1.7rem;
+    padding:5px;
+    border-radius:5px;
+    background-color: #0ca8a8;
+    color: white;
+}
+button:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 1px 2px #57f0f0;
+}
+div.btn{
+    display: flex;
+    width:50vw;
+    justify-content: center;
+    margin-top:8px;
+}
+@media (max-width:1200px) {
+    main{
+        padding-bottom:10vh;
+    }
+    form{
+        padding-top: 5vh;
+        padding-left:5vw;
+        padding-right:5vw;
+    }
+  
+    .container::before{
+        width:88%;
+        left:6%;
+    }
+    @keyframes name{
+        100%{
+            width:70vw
+        }
+    }
+    textarea{
+        width:70vw;
+    }
+    div.btn{
+        display:flex;
+        margin:0;
+        justify-content: center;
+        width:100%;
+
+    }
+}
